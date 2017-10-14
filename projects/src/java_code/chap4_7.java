@@ -1,7 +1,6 @@
 package java_code;
 //import java.util.Locale;
 //import java.util.ResourceBundle;
-import oracle.jrockit.jfr.JFR;
 
 import javax.swing.*;
 import java.awt.*;

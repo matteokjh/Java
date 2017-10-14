@@ -40,7 +40,7 @@ public class chap7_1 {
         list.add(S4);
         list.add(S5);
         System.out.println(list);
-        System.out.println("请输入数字0-2：");
+        System.out.println("请输入数字0-3：");
         System.out.println("0--退出程序；   1--搜索学生； 2--删除学生； 3--学生信息；\n");
         Scanner sc = new Scanner(System.in);
         int i=sc.nextInt();
@@ -55,7 +55,7 @@ public class chap7_1 {
             case 3: chap7_1.show(list); break;
             default: System.out.println("非法输入！\n");
         }
-        System.out.println("请输入数字0-2：");
+        System.out.println("请输入数字0-3：");
         System.out.println("0--退出程序；   1--搜索学生； 2--删除学生； 3--学生信息\n");
         Scanner sb = new Scanner(System.in);
         i=sb.nextInt();
@@ -81,7 +81,7 @@ public class chap7_1 {
             if(p.id.equals(id))
             {
                 list.remove(j);
-                System.out.println("学生"+p.id+"已删除");
+                System.out.println("学生"+p.id+"已删除\n");
                 return;
             }
         }
