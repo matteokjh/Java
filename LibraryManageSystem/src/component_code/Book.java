@@ -8,7 +8,7 @@ public class Book {
 	private Float price; 
 	private Integer bookTypeId; 
 	private String bookTypeName; 
-	private String bookDesc; // ��ע
+	private String bookDesc;
 	
 	
 	

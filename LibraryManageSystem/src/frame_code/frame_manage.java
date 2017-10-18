@@ -9,20 +9,8 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.Vector;
 
-import javax.swing.ButtonGroup;
-import javax.swing.GroupLayout;
+import javax.swing.*;
 import javax.swing.GroupLayout.Alignment;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JInternalFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JRadioButton;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.LineBorder;
 import javax.swing.border.TitledBorder;
@@ -31,9 +19,9 @@ import javax.swing.table.DefaultTableModel;
 import if_empty_code.DbUtil;
 import if_empty_code.enter;
 import component_code.Book;
-import component_code.BookClass;
+import component_code.BookType;
 import db_code.db_book;
-import db_code.db_bookClass;
+import db_code.db_bookType;
 
 
 public class frame_manage extends JInternalFrame {
@@ -47,7 +35,7 @@ public class frame_manage extends JInternalFrame {
 	private JComboBox bookTypeJcb ;
 	
 	private DbUtil dbUtil=new DbUtil();
-	private db_bookClass bookTypeDao=new db_bookClass();
+	private db_bookType bookTypeDao=new db_bookType();
 	private db_book bookDao=new db_book();
 	private JTextField idTxt;
 	private JTextField bookNameTxt;
@@ -72,16 +60,16 @@ public class frame_manage extends JInternalFrame {
 	public frame_manage() {
 		setClosable(true);
 		setIconifiable(true);
-		setTitle("\u56FE\u4E66\u7BA1\u7406");
-		setBounds(100, 100, 677, 487);
+		setTitle("图书管理");
+		setBounds(800, 470, 677, 487);
 		
 		JScrollPane scrollPane = new JScrollPane();
 		
 		JPanel panel = new JPanel();
-		panel.setBorder(new TitledBorder(null, "\u641C\u7D22\u6761\u4EF6", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+		panel.setBorder(new TitledBorder(null, "搜索条件", TitledBorder.LEADING, TitledBorder.TOP, null, null));
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBorder(new TitledBorder(null, "\u8868\u5355\u64CD\u4F5C", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+		panel_1.setBorder(new TitledBorder(null, "表单操作", TitledBorder.LEADING, TitledBorder.TOP, null, null));
 		GroupLayout groupLayout = new GroupLayout(getContentPane());
 		groupLayout.setHorizontalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
@@ -106,45 +94,46 @@ public class frame_manage extends JInternalFrame {
 					.addContainerGap())
 		);
 		
-		JLabel lblNewLabel = new JLabel("\u7F16\u53F7\uFF1A");
+		JLabel lblNewLabel = new JLabel("编号： ");
 		
 		idTxt = new JTextField();
 		idTxt.setEditable(false);
 		idTxt.setColumns(10);
 		
-		JLabel lblNewLabel_1 = new JLabel("\u56FE\u4E66\u540D\u79F0\uFF1A");
+		JLabel lblNewLabel_1 = new JLabel("图书名称：");
 		
 		bookNameTxt = new JTextField();
 		bookNameTxt.setColumns(10);
 		
-		JLabel label_3 = new JLabel("\u4F5C\u8005\u6027\u522B\uFF1A");
+		JLabel label_3 = new JLabel("作者性别：");
 		
-		manJrb = new JRadioButton("\u7537");
+		manJrb = new JRadioButton("男");
 		buttonGroup.add(manJrb);
 		manJrb.setSelected(true);
 		
-		femaleJrb = new JRadioButton("\u5973");
+		femaleJrb = new JRadioButton("女");
 		buttonGroup.add(femaleJrb);
 		
-		JLabel label_4 = new JLabel("\u4EF7\u683C\uFF1A");
+		JLabel label_4 = new JLabel("价格：");
 		
 		priceTxt = new JTextField();
 		priceTxt.setColumns(10);
 		
-		JLabel lblNewLabel_2 = new JLabel("\u56FE\u4E66\u4F5C\u8005\uFF1A");
+		JLabel lblNewLabel_2 = new JLabel("图书作者：");
 		
 		authorTxt = new JTextField();
 		authorTxt.setColumns(10);
 		
-		JLabel label_5 = new JLabel("\u56FE\u4E66\u7C7B\u522B\uFF1A");
+		JLabel label_5 = new JLabel("图书类别：");
 		
 		bookTypeJcb = new JComboBox();
 		
-		JLabel label_6 = new JLabel("\u56FE\u4E66\u63CF\u8FF0\uFF1A");
+		JLabel label_6 = new JLabel("图书描述：");
 		
 		bookDescTxt = new JTextArea();
 		
-		JButton button_1 = new JButton("\u4FEE\u6539");
+		JButton button_1 = new JButton("修改");
+		button_1.setIcon(new ImageIcon(Index.class.getResource("/img/modify.png")));
 		button_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent evt) {
 				bookUpdateActionPerformed(evt);
@@ -152,7 +141,8 @@ public class frame_manage extends JInternalFrame {
 		});
 
 		
-		JButton button_2 = new JButton("\u5220\u9664");
+		JButton button_2 = new JButton("删除");
+        button_2.setIcon(new ImageIcon(Index.class.getResource("/img/delete.png")));
 		button_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent evt) {
 				bookDeleteActionPerformed(evt);
@@ -241,21 +231,21 @@ public class frame_manage extends JInternalFrame {
 		);
 		panel_1.setLayout(gl_panel_1);
 		
-		JLabel label = new JLabel("\u56FE\u4E66\u540D\u79F0\uFF1A");
+		JLabel label = new JLabel("图书名称：");
 		
 		s_bookNameTxt = new JTextField();
 		s_bookNameTxt.setColumns(10);
 		
-		JLabel label_1 = new JLabel("\u56FE\u4E66\u4F5C\u8005\uFF1A");
+		JLabel label_1 = new JLabel("图书作者：");
 		
 		s_authorTxt = new JTextField();
 		s_authorTxt.setColumns(10);
 		
-		JLabel label_2 = new JLabel("\u56FE\u4E66\u7C7B\u522B\uFF1A");
+		JLabel label_2 = new JLabel("图书类别：");
 		
 		s_bookTypeJcb = new JComboBox();
 		
-		JButton button = new JButton("\u67E5\u8BE2");
+		JButton button = new JButton("查询");
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				bookSearchActionPerformed(e);
@@ -310,7 +300,7 @@ public class frame_manage extends JInternalFrame {
 			new Object[][] {
 			},
 			new String[] {
-				"\u7F16\u53F7", "\u56FE\u4E66\u540D\u79F0", "\u56FE\u4E66\u4F5C\u8005", "\u4F5C\u8005\u6027\u522B", "\u56FE\u4E66\u4EF7\u683C", "\u56FE\u4E66\u63CF\u8FF0", "\u56FE\u4E66\u7C7B\u522B"
+				"编号", "图书名称", "图书作者", "作者性别", "图书价格", "图书描述", "图书类别"
 			}
 		) {
 			boolean[] columnEditables = new boolean[] {
@@ -384,7 +374,10 @@ public class frame_manage extends JInternalFrame {
 		String author=this.authorTxt.getText();
 		String price=this.priceTxt.getText();
 		String bookDesc=this.bookDescTxt.getText();
-		
+		if(!price.matches("^[0-9]\\d*\\.?\\d*")){
+			JOptionPane.showMessageDialog(null, "图书价格必须为合法数字！");
+			return;
+		}
 		if(enter.isEmpty(bookName)){
 			JOptionPane.showMessageDialog(null, "图书名称不能为空！");
 			return;
@@ -407,7 +400,7 @@ public class frame_manage extends JInternalFrame {
 			sex="女";
 		}
 		
-		BookClass bookType=(BookClass) bookTypeJcb.getSelectedItem();
+		BookType bookType=(BookType) bookTypeJcb.getSelectedItem();
 		int bookTypeId=bookType.getId();
 		
 		Book book=new Book(Integer.parseInt(id),  bookName, author, sex, Float.parseFloat(price),  bookTypeId,  bookDesc);
@@ -465,7 +458,7 @@ public class frame_manage extends JInternalFrame {
 		String bookTypeName=(String)this.bookTable.getValueAt(row, 6);
 		int n=this.bookTypeJcb.getItemCount();
 		for(int i=0;i<n;i++){
-			BookClass item=(BookClass) this.bookTypeJcb.getItemAt(i);
+			BookType item=(BookType) this.bookTypeJcb.getItemAt(i);
 			if(item.getBookTypeName().equals(bookTypeName)){
 				this.bookTypeJcb.setSelectedIndex(i);
 			}
@@ -476,7 +469,7 @@ public class frame_manage extends JInternalFrame {
 	private void bookSearchActionPerformed(ActionEvent evt) {
 		String bookName=this.s_bookNameTxt.getText();
 		String author=this.s_authorTxt.getText();
-		BookClass bookType=(BookClass) this.s_bookTypeJcb.getSelectedItem();
+		BookType bookType=(BookType) this.s_bookTypeJcb.getSelectedItem();
 		int bookTypeId=bookType.getId();
 		
 		Book book=new Book(bookName,author,bookTypeId);
@@ -486,18 +479,18 @@ public class frame_manage extends JInternalFrame {
 	
 	private void fillBookType(String type){
 		Connection con=null;
-		BookClass bookType=null;
+		BookType bookType=null;
 		try{
 			con=dbUtil.getCon();
-			ResultSet rs=bookTypeDao.list(con, new BookClass());
+			ResultSet rs=bookTypeDao.list(con, new BookType());
 			if("search".equals(type)){
-				bookType=new BookClass();
+				bookType=new BookType();
 				bookType.setBookTypeName("请选择...");
 				bookType.setId(-1);
 				this.s_bookTypeJcb.addItem(bookType);
 			}
 			while(rs.next()){
-				bookType=new BookClass();
+				bookType=new BookType();
 				bookType.setBookTypeName(rs.getString("bookTypeName"));
 				bookType.setId(rs.getInt("id"));
 				if("search".equals(type)){
@@ -521,7 +514,7 @@ public class frame_manage extends JInternalFrame {
 	
 	private void fillTable(Book book){
 		DefaultTableModel dtm=(DefaultTableModel) bookTable.getModel();
-		dtm.setRowCount(0); // 设置成0行
+		dtm.setRowCount(0); // 设置成0行,表格清空
 		Connection con=null;
 		try{
 			con=dbUtil.getCon();

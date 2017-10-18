@@ -19,8 +19,8 @@ public class db_book {
 		pstmt.setString(2, book.getAuthor());
 		pstmt.setString(3, book.getSex());
 		pstmt.setFloat(4, book.getPrice());
-		pstmt.setInt(5, book.getBookTypeId());
-		pstmt.setString(6, book.getBookDesc());
+		pstmt.setString(5, book.getBookDesc());
+		pstmt.setInt(6, book.getBookTypeId());
 		return pstmt.executeUpdate();
 	}
 	
@@ -60,8 +60,14 @@ public class db_book {
 		pstmt.setInt(7, book.getId());
 		return pstmt.executeUpdate();
 	}
-	
-	
+
+	/**
+	 * 判断类别中是否有书，返回boolean
+	 * @param con
+	 * @param bookTypeId
+	 * @return
+	 * @throws Exception
+	 */
 	public boolean existBookByBookTypeId(Connection con,String bookTypeId)throws Exception{
 		String sql="select * from t_book where bookTypeId=?";
 		PreparedStatement pstmt=con.prepareStatement(sql);

@@ -6,26 +6,17 @@ import java.awt.event.ActionListener;
 import java.sql.Connection;
 import java.sql.ResultSet;
 
-import javax.swing.ButtonGroup;
-import javax.swing.GroupLayout;
+import javax.swing.*;
 import javax.swing.GroupLayout.Alignment;
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JInternalFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JRadioButton;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.LineBorder;
 
 import if_empty_code.DbUtil;
 import if_empty_code.enter;
 import component_code.Book;
-import component_code.BookClass;
+import component_code.BookType;
 import db_code.db_book;
-import db_code.db_bookClass;
+import db_code.db_bookType;
 
 
 public class frame_book extends JInternalFrame {
@@ -39,7 +30,7 @@ public class frame_book extends JInternalFrame {
 	private JRadioButton femaleJrb;
 	
 	private DbUtil dbUtil=new DbUtil();
-	private db_bookClass bookTypeDao=new db_bookClass();
+	private db_bookType bookTypeDao=new db_bookType();
 	private db_book bookDao=new db_book();
 
 	/**
@@ -62,42 +53,43 @@ public class frame_book extends JInternalFrame {
 	public frame_book() {
 		setClosable(true);
 		setIconifiable(true);
-		setTitle("\u56FE\u4E66\u6DFB\u52A0");
-		setBounds(100, 100, 450, 467);
+		setTitle("图书添加");
+		setBounds(800, 10, 677, 450);
 		
-		JLabel label = new JLabel("\u56FE\u4E66\u540D\u79F0\uFF1A");
+		JLabel label = new JLabel("图书名称：");
 		
 		bookNameTxt = new JTextField();
 		bookNameTxt.setColumns(10);
 		
-		JLabel label_1 = new JLabel("\u56FE\u4E66\u4F5C\u8005\uFF1A");
+		JLabel label_1 = new JLabel("图书作者：");
 		
 		authorTxt = new JTextField();
 		authorTxt.setColumns(10);
 		
-		JLabel label_2 = new JLabel("\u4F5C\u8005\u6027\u522B\uFF1A");
+		JLabel label_2 = new JLabel("作者性别：");
 		
-		manJrb = new JRadioButton("\u7537");
+		manJrb = new JRadioButton("男");
 		buttonGroup.add(manJrb);
 		manJrb.setSelected(true);
 		
-		femaleJrb = new JRadioButton("\u5973");
+		femaleJrb = new JRadioButton("女");
 		buttonGroup.add(femaleJrb);
 		
-		JLabel label_3 = new JLabel("\u56FE\u4E66\u4EF7\u683C\uFF1A");
+		JLabel label_3 = new JLabel("图书价格：");
 		
 		priceTxt = new JTextField();
 		priceTxt.setColumns(10);
 		
-		JLabel label_4 = new JLabel("\u56FE\u4E66\u63CF\u8FF0\uFF1A");
+		JLabel label_4 = new JLabel("图书描述：");
 		
 		bookDescTxt = new JTextArea();
 		
-		JLabel label_5 = new JLabel("\u56FE\u4E66\u7C7B\u522B\uFF1A");
+		JLabel label_5 = new JLabel("图书类别：");
 		
 	    bookTypeJcb = new JComboBox();
 		
-		JButton button = new JButton("\u6DFB\u52A0");
+		JButton button = new JButton("添加");
+		button.setIcon(new ImageIcon(Index.class.getResource("/img/add.png")));
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				bookAddActionPerformed(e);
@@ -105,7 +97,8 @@ public class frame_book extends JInternalFrame {
 		});
 
 		
-		JButton button_1 = new JButton("\u91CD\u7F6E");
+		JButton button_1 = new JButton("重置");
+		button_1.setIcon(new ImageIcon(Index.class.getResource("/img/reset.png")));
 		button_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				resetValueActionPerformed(e);
@@ -201,32 +194,37 @@ public class frame_book extends JInternalFrame {
 	private void bookAddActionPerformed(ActionEvent evt) {
 		String bookName=this.bookNameTxt.getText();
 		String author=this.authorTxt.getText();
-		String price=this.priceTxt.getText();
 		String bookDesc=this.bookDescTxt.getText();
+		String price=this.priceTxt.getText();
+		if(!price.matches("^[0-9]\\d*\\.?\\d*")) {
+			//正则匹配非负整数和浮点数
+			JOptionPane.showMessageDialog(null,"价格只能为数字！");
+			return;
+		}
 		
 		if(enter.isEmpty(bookName)){
-			JOptionPane.showMessageDialog(null, "ͼ�����Ʋ���Ϊ�գ�");
+			JOptionPane.showMessageDialog(null, "书名不能为空！");
 			return;
 		}
 		
 		if(enter.isEmpty(author)){
-			JOptionPane.showMessageDialog(null, "ͼ�����߲���Ϊ�գ�");
+			JOptionPane.showMessageDialog(null, "作者名不能为空！");
 			return;
 		}
 		
 		if(enter.isEmpty(price)){
-			JOptionPane.showMessageDialog(null, "ͼ��۸���Ϊ�գ�");
+			JOptionPane.showMessageDialog(null, "价格不能为空！");
 			return;
 		}
 		
 		String sex="";
 		if(manJrb.isSelected()){
-			sex="��";
+			sex="男";
 		}else if(femaleJrb.isSelected()){
-			sex="Ů";
+			sex="女";
 		}
 		
-		BookClass bookType=(BookClass) bookTypeJcb.getSelectedItem();
+		BookType bookType=(BookType) bookTypeJcb.getSelectedItem();
 		int bookTypeId=bookType.getId();
 		
 		Book book=new Book(bookName,author, sex, Float.parseFloat(price) , bookTypeId,  bookDesc);
@@ -271,12 +269,12 @@ public class frame_book extends JInternalFrame {
 	
 	private void fillBookType(){
 		Connection con=null;
-		BookClass bookType=null;
+		BookType bookType=null;
 		try{
 			con=dbUtil.getCon();
-			ResultSet rs=bookTypeDao.list(con, new BookClass());
+			ResultSet rs=bookTypeDao.list(con, new BookType());
 			while(rs.next()){
-				bookType=new BookClass();
+				bookType=new BookType();
 				bookType.setId(rs.getInt("id"));
 				bookType.setBookTypeName(rs.getString("bookTypeName"));
 				this.bookTypeJcb.addItem(bookType);

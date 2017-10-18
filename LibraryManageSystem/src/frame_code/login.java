@@ -6,17 +6,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.Connection;
 
-import javax.swing.GroupLayout;
+import javax.swing.*;
 import javax.swing.GroupLayout.Alignment;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JPasswordField;
-import javax.swing.JTextField;
-import javax.swing.UIManager;
 import javax.swing.border.EmptyBorder;
 
 import if_empty_code.DbUtil;
@@ -33,6 +24,7 @@ public class login extends JFrame {
 	
 	private DbUtil dbUtil=new DbUtil();
 	private db_user userDao=new db_user();
+	//Data Access Object 数据访问对象
 
 	
 	public static void main(String[] args) {
@@ -62,29 +54,31 @@ public class login extends JFrame {
 		}
 				
 		setResizable(false);
-		setTitle("\u7BA1\u7406\u5458\u767B\u5F55");
+		setTitle("管理员登录");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 343);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		
-		JLabel lblNewLabel = new JLabel("\u56FE\u4E66\u7BA1\u7406\u7CFB\u7EDF");
+		JLabel lblNewLabel = new JLabel("图书管理系统");
+		lblNewLabel.setIcon(new ImageIcon(login.class.getResource("/img/logo.png")));
 		lblNewLabel.setFont(new Font("宋体", Font.BOLD, 23));
 
 		
-		JLabel lblNewLabel_1 = new JLabel("\u7528\u6237\u540D\uFF1A");
-
+		JLabel lblNewLabel_1 = new JLabel("用户名：");
+		lblNewLabel_1.setIcon(new ImageIcon(login.class.getResource("/img/userName.png")));
 		
-		JLabel lblNewLabel_2 = new JLabel("\u5BC6  \u7801\uFF1A");
-
+		JLabel lblNewLabel_2 = new JLabel("密  码：");
+		lblNewLabel_2.setIcon(new ImageIcon(login.class.getResource("/img/password.png")));
 		
 		userNameTxt = new JTextField();
 		userNameTxt.setColumns(10);
 		
 		passwordTxt = new JPasswordField();
 		
-		JButton btnNewButton = new JButton("\u767B\u5F55");
+		JButton btnNewButton = new JButton("登录");
+		btnNewButton.setIcon(new ImageIcon(login.class.getResource("/img/login.png")));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				loginActionPerformed(e);
@@ -92,10 +86,11 @@ public class login extends JFrame {
 		});
 
 		
-		JButton btnNewButton_1 = new JButton("\u91CD\u7F6E");
+		JButton btnNewButton_1 = new JButton("重置");
+		btnNewButton_1.setIcon(new ImageIcon(login.class.getResource("/img/reset.png")));
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				chongzhi(e);
+				reset(e);
 			}
 		});
 
@@ -147,11 +142,14 @@ public class login extends JFrame {
 		this.setLocationRelativeTo(null);
 	}
 
-	
+	/**
+	 * 登录事件处理
+	 * @param evt
+	 */
 	private void loginActionPerformed(ActionEvent evt) {
-		String userName=this.userNameTxt.getText();
-		String password=new String(this.passwordTxt.getPassword());
-		if(enter.isEmpty(userName)){
+		String username=this.userNameTxt.getText();
+		String password=new String(this.passwordTxt.getPassword()); //为了安全不用getText()
+		if(enter.isEmpty(username)){
 			JOptionPane.showMessageDialog(null, "用户名不能为空！");
 			return;
 		}
@@ -159,13 +157,14 @@ public class login extends JFrame {
 			JOptionPane.showMessageDialog(null, "密码不能为空！");
 			return;
 		}
-		User user=new User(userName,password);
+		User user=new User(username,password);
 		Connection con=null;
 		try {
 			con=dbUtil.getCon();
 			User currentUser=userDao.login(con, user);
+			//用户名密码正确就会返回非空值
 			if(currentUser!=null){
-				dispose();
+				dispose();//释放资源
 				new Index().setVisible(true);
 				JOptionPane.showMessageDialog(null, "请最大化此窗体方便操作！");
 			}else{
@@ -184,8 +183,12 @@ public class login extends JFrame {
 		}
 	}
 
+	/**
+	 * 重置事件处理
+	 * @param evt
+	 */
 	
-	private void chongzhi(ActionEvent evt) {
+	private void reset(ActionEvent evt) {
 		this.userNameTxt.setText("");
 		this.passwordTxt.setText("");
 	}
