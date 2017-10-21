@@ -44,60 +44,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="db_book.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/db_code/db_book.java">
+      <file leaf-file-name="frame_manage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/frame_code/frame_manage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="54" column="45" lean-forward="true" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
-              <folding>
-                <marker date="1508213326755" expanded="true" signature="267:310" ph="insert into t_book... " />
-                <marker date="1508213326755" expanded="true" signature="1332:1361" ph="delete from " />
-                <marker date="1508213326755" expanded="true" signature="1556:1642" ph="update t_boo... " />
-                <marker date="1508213326755" expanded="true" signature="2215:2254" ph="select * fro... t_book" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component_code/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component_code/BookType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db_user.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/db_code/db_user.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="88" lean-forward="true" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
+            <state relative-caret-position="807">
+              <caret line="343" column="47" lean-forward="false" selection-start-line="343" selection-start-column="47" selection-end-line="343" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1508208185498" expanded="true" signature="273:325" ph="select * fro... t_user" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/component_code/Book.java">
+      <file leaf-file-name="DbUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/if_empty_code/DbUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="460">
+              <caret line="20" column="76" lean-forward="true" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,10 +71,9 @@
       <file leaf-file-name="db_bookType.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/db_code/db_bookType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+            <state relative-caret-position="452">
+              <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <marker date="1508212919123" expanded="true" signature="289:328" ph="insert into t_bookType... " />
                 <marker date="1508212919123" expanded="true" signature="1160:1193" ph="delete from " />
                 <marker date="1508212919123" expanded="true" signature="1426:1488" ph="update t_boo... " />
@@ -117,37 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="frame_book.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/frame_code/frame_book.java">
+      <file leaf-file-name="frame_bookType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/frame_code/frame_bookType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="266" column="5" lean-forward="true" selection-start-line="266" selection-start-column="5" selection-end-line="266" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="frame_manage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/frame_code/frame_manage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="343" column="47" lean-forward="true" selection-start-line="343" selection-start-column="47" selection-end-line="343" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#10782#10902#0" expanded="true" />
-                <element signature="e#10901#10902#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DbUtil.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/if_empty_code/DbUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            <state relative-caret-position="416">
+              <caret line="79" column="62" lean-forward="false" selection-start-line="79" selection-start-column="62" selection-end-line="79" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -156,9 +95,59 @@
       <file leaf-file-name="enter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/if_empty_code/enter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="59" lean-forward="false" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+            <state relative-caret-position="230">
+              <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Index.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/frame_code/Index.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="104" column="36" lean-forward="true" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="frame_book.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/frame_code/frame_book.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1794">
+              <caret line="107" column="68" lean-forward="true" selection-start-line="107" selection-start-column="68" selection-end-line="107" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="frame_manage_type.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/frame_code/frame_manage_type.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6166">
+              <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="siginin.jfd" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/if_empty_code/siginin.jfd">
+          <provider selected="true" editor-type-id="JFormDesigner">
+            <state paletteWidth="150" propertiesWidth="312" structureHeight="312" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="siginin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/if_empty_code/siginin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="100" column="5" lean-forward="true" selection-start-line="100" selection-start-column="5" selection-end-line="101" selection-end-column="0" />
+              <folding>
+                <marker date="1508489629364" expanded="false" signature="342:3501" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+                <marker date="1508489629364" expanded="true" signature="3513:3915" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -216,12 +205,15 @@
         <option value="$PROJECT_DIR$/src/db_code/db_book.java" />
         <option value="$PROJECT_DIR$/src/frame_code/login.java" />
         <option value="$PROJECT_DIR$/src/frame_code/frame_bookType.java" />
-        <option value="$PROJECT_DIR$/src/frame_code/frame_manage_type.java" />
         <option value="$PROJECT_DIR$/src/frame_code/fuck.jfd" />
         <option value="$PROJECT_DIR$/src/frame_code/frame_manage.java" />
         <option value="$PROJECT_DIR$/src/frame_code/frame_book.java" />
         <option value="$PROJECT_DIR$/src/frame_code/Index.java" />
         <option value="$PROJECT_DIR$/src/if_empty_code/enter.java" />
+        <option value="$PROJECT_DIR$/src/frame_code/signin.jfd" />
+        <option value="$PROJECT_DIR$/src/frame_code/signIn.jfd" />
+        <option value="$PROJECT_DIR$/src/if_empty_code/siginin.jfd" />
+        <option value="$PROJECT_DIR$/src/frame_code/frame_manage_type.java" />
       </list>
     </option>
   </component>
@@ -232,10 +224,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2081" />
-    <option name="y" value="73" />
-    <option name="width" value="1550" />
-    <option name="height" value="838" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -254,7 +246,6 @@
     <panes>
       <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -296,6 +287,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -305,7 +297,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="jformdesi&#9;ACTION&#9;JFormDesigner.NewFormAction&#10;da&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;database&#9;ACTION&#9;ActivateDatabaseToolWindow" />
+    <property name="SearchEverywhereHistoryKey" value="jformdesigner&#9;ACTION&#9;JFormDesigner.NewFormAction&#10;jformdesi&#9;ACTION&#9;JFormDesigner.NewFormAction&#10;jformdes&#9;ACTION&#9;JFormDesigner.NewFormAction&#10;da&#9;ACTION&#9;ActivateDatabaseToolWindow&#10;database&#9;ACTION&#9;ActivateDatabaseToolWindow" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/resources" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -334,7 +326,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.LibraryManageSystem.jar">
+  <component name="RunManager" selected="Application.Index">
     <configuration name="DbUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -343,6 +335,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="if_empty_code.DbUtil" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="LibraryManageSystem" />
+      <envs />
+    </configuration>
+    <configuration name="Index" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="frame_code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="frame_code.Index" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -459,16 +470,18 @@
       <module name="LibraryManageSystem" />
       <envs />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.login" />
       <item index="1" class="java.lang.String" itemvalue="Application.DbUtil" />
       <item index="2" class="java.lang.String" itemvalue="JAR Application.LibraryManageSystem.jar" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Index" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JAR Application.LibraryManageSystem.jar" />
-        <item index="1" class="java.lang.String" itemvalue="Application.login" />
-        <item index="2" class="java.lang.String" itemvalue="Application.DbUtil" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.Index" />
+        <item index="1" class="java.lang.String" itemvalue="JAR Application.LibraryManageSystem.jar" />
+        <item index="2" class="java.lang.String" itemvalue="Application.login" />
+        <item index="3" class="java.lang.String" itemvalue="Application.DbUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -494,14 +507,16 @@
       <workItem from="1508241938270" duration="7551000" />
       <workItem from="1508335674819" duration="133000" />
       <workItem from="1508346788125" duration="2075000" />
+      <workItem from="1508475035576" duration="4172000" />
+      <workItem from="1508489353998" duration="1068000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56181000" />
+    <option name="totallyTimeSpent" value="61421000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -511,7 +526,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.027114967" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.026490066" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -540,51 +555,16 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/frame_code/frame_bookClass.java" />
-    <entry file="file://$PROJECT_DIR$/src/db_code/db_user.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1508208185498" expanded="true" signature="273:325" ph="select * fro... t_user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frame_code/frame_manage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10051">
-          <caret line="480" column="8" lean-forward="true" selection-start-line="480" selection-start-column="8" selection-end-line="480" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#10782#10902#0" expanded="true" />
-            <element signature="e#10901#10902#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/if_empty_code/DbUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="17" column="76" lean-forward="false" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/frame_code/login.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3197">
           <caret line="165" column="32" lean-forward="true" selection-start-line="165" selection-start-column="32" selection-end-line="165" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2269#2270#0" expanded="true" />
-            <element signature="e#2303#2304#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -594,10 +574,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="e#1060#1061#0" expanded="false" />
-            <element signature="e#1076#1077#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -619,7 +596,7 @@
         <state relative-caret-position="4715">
           <caret line="236" column="46" lean-forward="true" selection-start-line="236" selection-start-column="46" selection-end-line="236" selection-end-column="46" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -630,7 +607,7 @@
         <state relative-caret-position="552">
           <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <marker date="1508208185498" expanded="true" signature="273:325" ph="select * fro... t_user" />
           </folding>
         </state>
@@ -642,8 +619,6 @@
           <caret line="480" column="8" lean-forward="true" selection-start-line="480" selection-start-column="8" selection-end-line="480" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10782#10902#0" expanded="true" />
-            <element signature="e#10901#10902#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -660,7 +635,7 @@
         <state relative-caret-position="161">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <marker date="1508208185498" expanded="true" signature="273:325" ph="select * fro... t_user" />
           </folding>
         </state>
@@ -677,11 +652,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3197">
           <caret line="165" column="32" lean-forward="true" selection-start-line="165" selection-start-column="32" selection-end-line="165" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2269#2270#0" expanded="true" />
-            <element signature="e#2303#2304#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -750,16 +721,6 @@
     <entry file="file://$PROJECT_DIR$/library.sql" />
     <entry file="das://table:/a85769e4/376638d5-8798-4f83-84df-2fdae0c3f520/library.t_user" />
     <entry file="jar://$PROJECT_DIR$/../jdk/src.zip!/javax/swing/ImageIcon.java" />
-    <entry file="file://$PROJECT_DIR$/src/frame_code/frame_manage_type.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2553">
-          <caret line="135" column="70" lean-forward="false" selection-start-line="135" selection-start-column="70" selection-end-line="135" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LibraryManageSystem.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -769,42 +730,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/frame_code/fuck.java" />
     <entry file="file://$PROJECT_DIR$/src/frame_code/fuck.jfd" />
+    <entry file="file://$PROJECT_DIR$/src/frame_code/signIn.jfd" />
+    <entry file="file://$PROJECT_DIR$/src/frame_code/signIn.java" />
+    <entry file="file://$PROJECT_DIR$/src/db_code/db_user.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="88" lean-forward="false" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <marker date="1508208185498" expanded="true" signature="273:325" ph="select * fro... t_user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/frame_code/login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="115">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db_code/db_book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2269#2270#0" expanded="true" />
-            <element signature="e#2303#2304#0" expanded="true" />
+            <marker date="1508213326755" expanded="true" signature="267:310" ph="insert into t_book... " />
+            <marker date="1508213326755" expanded="true" signature="1332:1361" ph="delete from " />
+            <marker date="1508213326755" expanded="true" signature="1556:1642" ph="update t_boo... " />
+            <marker date="1508213326755" expanded="true" signature="2215:2254" ph="select * fro... t_book" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/frame_code/frame_bookType.java">
+    <entry file="file://$PROJECT_DIR$/src/component_code/Book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="70" column="70" lean-forward="false" selection-start-line="70" selection-start-column="70" selection-end-line="70" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/frame_code/Index.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2507">
-          <caret line="116" column="11" lean-forward="false" selection-start-line="116" selection-start-column="11" selection-end-line="116" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component_code/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        <state relative-caret-position="820">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -817,42 +780,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/component_code/Book.java">
+    <entry file="file://$PROJECT_DIR$/src/component_code/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/if_empty_code/enter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/if_empty_code/siginin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="100" column="5" lean-forward="true" selection-start-line="100" selection-start-column="5" selection-end-line="101" selection-end-column="0" />
+          <folding>
+            <marker date="1508489629364" expanded="false" signature="342:3501" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1508489629364" expanded="true" signature="3513:3915" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/if_empty_code/siginin.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner">
+        <state paletteWidth="150" propertiesWidth="312" structureHeight="312" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/frame_code/frame_book.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="266" column="5" lean-forward="true" selection-start-line="266" selection-start-column="5" selection-end-line="266" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1794">
+          <caret line="107" column="68" lean-forward="true" selection-start-line="107" selection-start-column="68" selection-end-line="107" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/frame_code/frame_manage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="343" column="47" lean-forward="true" selection-start-line="343" selection-start-column="47" selection-end-line="343" selection-end-column="47" />
+        <state relative-caret-position="807">
+          <caret line="343" column="47" lean-forward="false" selection-start-line="343" selection-start-column="47" selection-end-line="343" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10782#10902#0" expanded="true" />
-            <element signature="e#10901#10902#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/frame_code/frame_bookType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="79" column="62" lean-forward="false" selection-start-line="79" selection-start-column="62" selection-end-line="79" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/db_code/db_bookType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        <state relative-caret-position="452">
+          <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="true" />
             <marker date="1508212919123" expanded="true" signature="289:328" ph="insert into t_bookType... " />
             <marker date="1508212919123" expanded="true" signature="1160:1193" ph="delete from " />
             <marker date="1508212919123" expanded="true" signature="1426:1488" ph="update t_boo... " />
@@ -860,42 +850,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/db_code/db_book.java">
+    <entry file="file://$PROJECT_DIR$/src/if_empty_code/DbUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="54" column="45" lean-forward="true" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
-          <folding>
-            <marker date="1508213326755" expanded="true" signature="267:310" ph="insert into t_book... " />
-            <marker date="1508213326755" expanded="true" signature="1332:1361" ph="delete from " />
-            <marker date="1508213326755" expanded="true" signature="1556:1642" ph="update t_boo... " />
-            <marker date="1508213326755" expanded="true" signature="2215:2254" ph="select * fro... t_book" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db_code/db_user.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="88" lean-forward="true" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
+        <state relative-caret-position="460">
+          <caret line="20" column="76" lean-forward="true" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1508208185498" expanded="true" signature="273:325" ph="select * fro... t_user" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/if_empty_code/enter.java">
+    <entry file="file://$PROJECT_DIR$/src/frame_code/frame_manage_type.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="59" lean-forward="false" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+        <state relative-caret-position="-6166">
+          <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/if_empty_code/DbUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/frame_code/Index.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="230">
+          <caret line="104" column="36" lean-forward="true" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
           <folding />
         </state>
       </provider>
